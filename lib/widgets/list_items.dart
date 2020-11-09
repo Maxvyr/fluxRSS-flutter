@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flux_rss/controller/colors.dart';
 import 'package:flux_rss/controller/constant.dart';
+import 'package:flux_rss/models/url_launcher.dart';
 import 'package:flux_rss/widgets/my_text.dart';
 import 'package:webfeed/webfeed.dart';
 
@@ -38,7 +39,9 @@ class _ListItemsState extends State<ListItems> {
             child: Card(
               elevation: 10,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  launchInBrowser(item.link);
+                },
                 child: Column(
                   children: [
                     Padding(
