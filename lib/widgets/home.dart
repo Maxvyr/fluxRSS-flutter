@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flux_rss/controller/colors.dart';
 import 'package:flux_rss/models/parser.dart';
 import 'package:flux_rss/widgets/chargement.dart';
+import 'package:flux_rss/widgets/grid_items.dart';
+import 'package:flux_rss/widgets/list_items.dart';
 import 'package:webfeed/domain/rss_feed.dart';
 import 'dart:async';
 
@@ -30,6 +33,20 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(widget.title),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.refresh,
+                color: white,
+              ),
+              onPressed: () {
+                //update list
+                setState(() {
+                  feed = null;
+                  parse();
+                });
+              })
+        ],
       ),
       body: choixDuBody(),
     );
@@ -39,8 +56,14 @@ class _HomeState extends State<Home> {
     if (feed == null) {
       return Chargement();
     } else {
-      //todo a remplir
-      return Center();
+      Orientation orientation = MediaQuery.of(context).orientation;
+      if (orientation == Orientation.portrait) {
+        //List
+        return ListItems(feed);
+      } else {
+        //Grid
+        return GridItems(feed);
+      }
     }
   }
 

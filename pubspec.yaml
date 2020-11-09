@@ -31,6 +31,7 @@ dependencies:
   webfeed: ^0.6.0
   html: ^0.14.0+4
   http: ^0.12.2
+  intl: ^0.16.1
 
 dev_dependencies:
   flutter_test:

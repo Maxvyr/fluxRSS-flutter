@@ -5,7 +5,6 @@ import 'package:http/http.dart';
 class Parser {
   //Variable
   final url = "http://www.frandroid.com/feed";
-  // final url = "https://www.france24.com/fr/actualites/rss";
 
   Future chargerRSS() async {
     //recover url server with package http
