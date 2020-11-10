@@ -4,11 +4,6 @@
 https://www.frandroid.com/.
 
 
-## New features to develop
-1. Display information of a selected user
-2. Create a system of favorite
-
-
 ## Requirements
 * Computer (Windows, Mac or Linux)
 * Android Studio
