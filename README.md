@@ -38,3 +38,18 @@ https://www.frandroid.com/.
 * [Download Android Studio](https://developer.android.com/studio)
 * [Create a new virtual device](https://developer.android.com/studio/run/managing-avds.html)
 * [Enable developer options and debugging](https://developer.android.com/studio/debug/dev-options.html#enable)
+
+# My apps on Store
+
+<a href="https://play.google.com/store/apps/developer?id=Pandamy" target="_blank"><img src="https://i.imgur.com/YetVBL1.png" alt="Get in on PlayStore" style="height: 25px; width: 50px;" ></a>
+
+contact : pandamydev@gmail.com 
+
+# Tips
+
+* [Donation](https://ko-fi.com/maxvyr)
+
+# Crypto Tips 
+
+
+![ETH_QR_Code](https://i.imgur.com/XpF2vgw.png)
